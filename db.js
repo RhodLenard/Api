@@ -4,11 +4,11 @@ dotenv.config();
 
 const pool = mysql
   .createPool({
-    host: "portfolio-portfolio24.f.aivencloud.com.HOST",
-    user: "avnadmin.USER",
-    password: "AVNS_QwwToNO8ZyMZTSD178Y.PASSWORD", // Update with your MySQL root password if needed
-    database: "defaultdb.DATABASE", // Ensure this matches your database name
-    port: 13349,
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD, // Update with your MySQL root password if needed
+    database: process.env.DATABASE, // Ensure this matches your database name
+    port: process.env.PORT,
     multipleStatements: true,
   })
   .promise();

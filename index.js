@@ -5,7 +5,7 @@ import cors from 'cors';
 import bcrypt from 'bcrypt';
 
 const app = express();
-const port = 5003;
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(cors());

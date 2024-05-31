@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>Login</title>
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm">
+      <div class="input">
+        <h1>Log In</h1>
+        <input id="email" class="input-box" type="text" placeholder="Username" required>
+        <input id="password" class="input-box" type="password" placeholder="Password" required>
+      </div>
+      <div class="remember-forgot">
+        <label>
+          <input id="rememberMe" class="check" type="checkbox">
+          Remember me
+        </label>
+        <a class="forgot" href="#">Forgot Password?</a>
+      </div>
+
+      <button class="btn" type="submit">Log In</button>
+
+      <p>Don't have an account? <a class="reg" href="#">Register</a></p>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
